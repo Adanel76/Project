@@ -186,5 +186,13 @@ AOS.init({
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-  
 });
+
+if (!localStorage.theme) localStorage.theme = "Dark"
+document.body.className  = localStorage.theme
+// changeThemBtn.innerText = document.body.classList.contains("wight") ? "Тема" : "Тема"
+
+changeThemBtn.onclick = () => {
+    document.body.classList.toggle("white")
+    localStorage.theme = document.body.className || "light"
+};

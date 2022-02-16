@@ -24,10 +24,11 @@
     <nav>
     <div class="menu_active">
       <ul class="menu row">
-        <div class="menu_vanish col-md-6 col-xl-9"></div>
-        <li class="menu_item col-md-2 col-xl-1"><a href="#description" class="menu_link">О сайте</a></li>
-        <li class="menu_item col-md-2 col-xl-1"><a href="#download" class="menu_link">Материалы</a></li>
-        <li class="menu_item col-md-2 col-xl-1"><a href="tel:89885590967" class="menu_link">Контакты</a></li>
+        <div class="menu_vanish col-md-3 col-xl-8"></div>
+        <li id="changeThemBtn" class="menu_item col-md-3 col-xl-1" data-aos="fade-down" data-aos-delay="100"><a href="#" class="menu_link">Тема</a></li>
+        <li class="menu_item col-md-2 col-xl-1" data-aos="fade-down" data-aos-delay="100"><a href="#description" class="menu_link">О сайте</a></li>
+        <li class="menu_item col-md-2 col-xl-1" data-aos="fade-down" data-aos-delay="100"><a href="#download" class="menu_link">Материалы</a></li>
+        <li class="menu_item col-md-2 col-xl-1" data-aos="fade-down" data-aos-delay="100"><a href="tel:89885590967" class="menu_link">Контакты</a></li>
       </ul>
     </div>
       <div class="hamburger_active">
@@ -53,7 +54,7 @@
   <section class="promo">
     <div class="container">
       <div class="row">
-        <div class="col-md-10 offset-md-1">
+        <div class="col-md-10 offset-md-1" data-aos="zoom-out" data-aos-delay="100">
           <h1 class="promo_header">
             Разработка сайта
           </h1>
@@ -138,12 +139,11 @@
     <div class="container">
       <div class="description_info">
         <h3>
-            <p data-aos="fade-up" data-aos-delay="100">
-              <a name="download" class="description_sup">
-                Немного о сайте
-              </a>
-            </p>
-         
+          <p class="description_sup" data-aos="fade-up" data-aos-delay="100">
+            <a name="description" >
+              Немного о сайте
+            </a>
+          </p>
         </h3>
           <p class="description_subheader" data-aos="fade-up" data-aos-delay="100">
             Этот сайт был сделан в минималистичном стиле в рамках индивидуального проекта и в будущем он никак не будет изменяться. 
@@ -156,7 +156,7 @@
 
   <section class="download">
     <h3>
-      <p data-aos="fade-up" data-aos-delay="100">
+      <p class="download_sup" data-aos="fade-up" data-aos-delay="100">
         <a name="download" class="download_sup">
           Материалы
         </a>
@@ -215,7 +215,7 @@
     <div class="container">
       <div class="main_list">
         <div class="main_contacts">
-          <a href="tel:89885590967">
+          <a class="main_num" href="tel:89885590967">
             Контакты
           </a>
         </div>
