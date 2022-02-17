@@ -188,11 +188,12 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
-if (!localStorage.theme) localStorage.theme = "Dark"
-document.body.className  = localStorage.theme
-// changeThemBtn.innerText = document.body.classList.contains("wight") ? "Тема" : "Тема"
+if(!localStorage.theme) localStorage.theme = "dark"
+document.body.className = localStorage.theme
+changeThemBtn.innerText = document.body.classList.contains("white") ? "Светлая тема" : "Тёмная тема"
 
 changeThemBtn.onclick = () => {
     document.body.classList.toggle("white")
-    localStorage.theme = document.body.className || "light"
+    changeThemBtn.innerText = document.body.classList.contains("white") ? "Светлая тема" : "Тёмная тема"
+    localStorage.theme = document.body.className || "dark"
 };
