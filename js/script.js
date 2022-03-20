@@ -16,16 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 });
 
-// $(document).ready(function(){
-//     $('.carousel__iner').slick({
-//         // dots: true,
-//         // infinite: true,
-//         // speed: 300,
-//         // slidesToShow: 1,
-//         // adaptiveHeight: true
-//     });
-// });
-
 $('#card-text-id-first').typeIt({
     speed: 70, //скорость анимации
     autoStart: false /*если true то анимация начнется сразу после загрузки страницы, если false, то только когда блок будет в зоне видимости*/

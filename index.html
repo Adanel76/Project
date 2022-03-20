@@ -8,7 +8,7 @@
     Разработка сайта
   </title>
   <link rel="shortcut icon" href="icons/dark-violet.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,24 +17,24 @@
 </head>
 <body>
 
-  <header>
-    <div class="top">
+  <header> <!-- Шапка -->
+    <div class="top"> <!-- Всплывающее меню для телефонов и планшетов -->
 
     </div>
-    <nav>
-    <div class="menu_active">
+    <nav> <!-- Навигационное меню -->
+      <div class="menu_active"> <!-- Активное состояние навигационнго меню -->
       <ul class="menu row">
-        <div class="menu_vanish col-md-3 col-xl-7"></div>
+        <div class="menu_vanish col-md-3 col-xl-7"></div> <!-- Скрытый блок в навигационном меню -->
         <li id="changeThemBtn" class="menu_item col-md-3 col-xl-2" data-aos="fade-down" data-aos-delay="100"><a href="#" class="menu_link">Тёмная тема</a></li>
         <li class="menu_item col-md-2 col-xl-1" data-aos="fade-down" data-aos-delay="100"><a href="#description" class="menu_link">О сайте</a></li>
         <li class="menu_item col-md-2 col-xl-1" data-aos="fade-down" data-aos-delay="100"><a href="#download" class="menu_link">Материалы</a></li>
         <li class="menu_item col-md-2 col-xl-1" data-aos="fade-down" data-aos-delay="100"><a href="tel:89885590967" class="menu_link">Контакты</a></li>
       </ul>
     </div>
-      <div class="hamburger_active">
+      <div class="hamburger_active"> <!-- Активное состояние трёх полосок -->
         
       </div>
-      <div class="hamburger">
+      <div class="hamburger"> <!-- Три полоски, появляющиеся при мобильной и планшетной адаптации -->
         <span>
   
         </span>
@@ -49,16 +49,14 @@
 
   </header>
 
-
-  <!-- <p id="prog_time"></p> -->
-  <section class="promo">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 offset-md-1" data-aos="zoom-out" data-aos-delay="100">
-          <h1 class="promo_header">
+  <section class="promo"> <!-- Блок с заголовком сайта -->
+    <div class="container"> <!-- Контейнер -->
+      <div class="row"> <!-- Блок для выравнивание вложенных блоков -->
+        <div class="col-md-10 offset-md-1" data-aos="zoom-out" data-aos-delay="100"> <!-- Блок с текстом -->
+          <h1 class="promo_header"> <!-- Текст -->
             Разработка сайта
           </h1>
-          <h2 class="promo_subheader">
+          <h2 class="promo_subheader"> <!-- Текст -->
             Этот сайт был написан для проекта
           </h2>
           <div class="prog_time_breakLines">
@@ -68,29 +66,28 @@
     </div>
   </section>
 
-  <div class="smart">
-    <div class="container">
-      <div class="smart_info">
-        
-        <div class="smart_info_block" >
-          <h5 class="smart_string smart_string_one">
+  <div class="smart"> <!-- Блок для адаптации под телефоны и планшеты -->
+    <div class="container"> <!-- Контейнер -->
+      <div class="smart_info"> <!-- Блок с информацией -->
+        <div class="smart_info_block" > <!-- Блок с картинкой и текстом -->
+          <h5 class="smart_string smart_string_one"> <!-- Автоматически подбирающийся текст -->
             Э
           </h5>
-          <img src="img/pictures/code.png" class="smart_img" alt="Код" data-aos="fade-up" data-aos-delay="100">
+          <img src="img/pictures/code.png" class="smart_img" alt="Код" data-aos="fade-up" data-aos-delay="100"> <!-- Картинка -->
           <span class="info_subdiscr" >
-            <p class="sup_string" data-aos="fade-up" data-aos-delay="100">
+            <p class="sup_string" data-aos="fade-up" data-aos-delay="100"> <!-- Текст к картинке -->
               Создание макета сайта и его реализация при помощи HTML, CSS и JavaScript
             </p>
           </span>
         </div>
 
-        <div class="smart_info_block">
-          <h5 class="smart_string smart_string_two">
+        <div class="smart_info_block"> <!-- Блок с картинкой и текстом -->
+          <h5 class="smart_string smart_string_two"> <!-- Автоматически подбирающийся текст -->
             Э
           </h5>
-          <img src="img/pictures/github.png" class="smart_img" alt="GitHub" data-aos="fade-up" data-aos-delay="100">
+          <img src="img/pictures/github.png" class="smart_img" alt="GitHub" data-aos="fade-up" data-aos-delay="100"> <!-- Картинка -->
           <span class="info_subdiscr" >
-            <p class="sup_string" data-aos="fade-up" data-aos-delay="100">
+            <p class="sup_string" data-aos="fade-up" data-aos-delay="100"> <!-- Текст к картинке -->
               Создание макета сайта и его реализация при помощи HTML, CSS и JavaScript
             </p>
           </span>
@@ -100,78 +97,89 @@
     </div>
   </div>
 
-  <section class="info">
-    <div class="container">
-      <div class="row justify-content-between">
-        <img src="img/pictures/code.png" alt="Код" class="info_img" data-aos="fade-up" data-aos-delay="100">
+  <section class="info"> <!-- Блок для адаптации под большие мониторы -->
+    <div class="container"> <!-- Контейнер -->
+      <div class="row justify-content-between"> <!-- Блок для выравнивание вложенных блоков -->
+        <img src="img/pictures/code.png" alt="Код" class="info_img" data-aos="fade-up" data-aos-delay="100"> <!-- Картинка -->
         <div class="info_discr col-md-6">
-          <span class="info_header info_header_one">
+          <span class="info_header info_header_one"> <!-- Автоматически подбирающийся текст -->
             Э
           </span>
           <br>
           <br>
           <br>
           <span class="info_subdiscr" >
-            <p class="sup_string" data-aos="fade-up" data-aos-delay="100">
+            <p class="sup_string" data-aos="fade-up" data-aos-delay="100"> <!-- Текст к картинке -->
               Создание макета сайта и его реализация при помощи HTML, CSS и JavaScript
             </p>
           </span>
         </div>
         <div class="info_discr col-md-6">
-          <span class="info_header info_header_two">
+          <span class="info_header info_header_two"> <!-- Автоматически подбирающийся текст -->
             Э
           </span>
           <br>
           <br>
           <br>
           <span class="info_subdiscr">
-            <p class="sup_string" data-aos="fade-up" data-aos-delay="100">
+            <p class="sup_string" data-aos="fade-up" data-aos-delay="100"> <!-- Текст к картинке -->
               Создание личного домена и размещение сайта на хостинге
             </p>
           </span>
         </div>
-          <img src="img/pictures/github.png" alt="GitHub" class="info_img" data-aos="fade-up" data-aos-delay="100">
+          <img src="img/pictures/github.png" alt="GitHub" class="info_img" data-aos="fade-up" data-aos-delay="100"> <!-- Картинка -->
       </div>
     </div>
   </section>
 
-  <section class="description">
-    <div class="container">
-      <div class="description_info">
+  <section class="description"> <!-- Блок с информацией о сайте -->
+    <div class="container"> <!-- Контейнер -->
+      <div class="description_info"> <!-- Блок, содержащий информацию о сайте -->
         <h3>
           <p class="description_sup" data-aos="fade-up" data-aos-delay="100">
-            <a name="description" >
+            <a name="description" > <!-- Текст -->
               Немного о сайте
             </a>
           </p>
         </h3>
-          <p class="description_subheader" data-aos="fade-up" data-aos-delay="100">
+          <p class="description_subheader" data-aos="fade-up" data-aos-delay="100"> <!-- Текст с информацией о сайте -->
             Этот сайт был сделан в минималистичном стиле в рамках индивидуального проекта и в будущем он никак не будет изменяться. 
             Сайт был написан в редакторе исходного кода (Visual Studio Code), разработанном Microsoft для Windows, Linux и macOS.
             Для того чтобы создать «скелет» сайта, я использовал язык разметки гипертекстовых документов (HTML 5.0), затем я решил воспользоваться таблицей каскадных стилей (CSS), чтобы за стилизовать свой вебсайт путём изменения фона, свойств блоков и т.д. Дальше я воспользовался языком программирования JavaScript, псевдоклассами и псевдоэлементами, чтобы сайт был более отзывчивым и приятным для использования. Также во время разработки сайта, я пользовался инструментарием с открытым исходным кодом (Bootstrap) и скриптовым метаязыком (Sass) для ускорения и упрощения своей работы.
         </p>
+        <p data-aos="fade-up" data-aos-delay="100">
+          <button type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Дополнительно
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            Во время написания проекта я изучал историю создания сайтов, их виды и то, каким образом они могут создаваться. Так же я изучал дизайн сайтов и их реагирование на пользователя. Я использовал инструментарий с открытым исходным кодом, скриптовый метаязык и разные форумы для упрощения и ускорения свой работы. Я познакомился с бесплатным хостингом – GitHub, изучил его свойства и создал репозиторий, на котором разместился мой сайт. 
+            На полную разработку сайта у меня ушло 6 дней, а также ещё 3 дня на исправление ошибок и багов. Теперь мой сайт полностью готов и размещён на хостинге в интернете.
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="download">
+  <section class="download"> <!-- Блок с карточками для загрузки -->
     <h3>
       <p class="download_sup" data-aos="fade-up" data-aos-delay="100">
-        <a name="download" class="download_sup">
+        <a name="download" class="download_sup"> <!-- Текст -->
           Материалы
         </a>
       </p>
     </h3>
-    <div class="container">
-      <div class="row">
-        <div class="download_list" data-aos="fade-up" data-aos-delay="100">
+    <div class="container"> <!-- Контейнер -->
+      <div class="row"> <!-- Блок для выравнивание вложенных блоков -->
+        <div class="download_list" data-aos="fade-up" data-aos-delay="100"> <!-- Карточка -->
           <div class="card">
-            <img class="card-img-top" src="img/pictures/html.jpg" alt="HTML">
-            <div class="card-body">
-              <h5 class="card-title">HTMl</h5>
-              <p class="card-text" id="card-text-id-first">Здесь содержится HTML код, который вы можете скачать</p>
-              <button>
-                <a href="https://drive.google.com/file/d/1Jcik2s5x1vZaal5bmUoMhulf2W5DNAkq/view?usp=sharing">
+            <img class="card-img-top" src="img/pictures/html.jpg" alt="HTML"> <!-- Картинка -->
+            <div class="card-body"> <!-- Тело карточки -->
+              <h5 class="card-title">HTMl</h5> <!-- Название карточки -->
+              <p class="card-text" id="card-text-id-first">Здесь содержится HTML код, который вы можете скачать</p> <!-- Текст к ссылке -->
+              <button> <!-- Кнопка -->
+                <a href="https://drive.google.com/file/d/1Jcik2s5x1vZaal5bmUoMhulf2W5DNAkq/view?usp=sharing"> <!-- Ссылка -->
                   Скачать
                 </a>
               </button>
@@ -179,14 +187,14 @@
           </div>
         </div>
   
-        <div class="download_list"  data-aos="fade-up" data-aos-delay="300">
+        <div class="download_list"  data-aos="fade-up" data-aos-delay="300"> <!-- Карточка -->
           <div class="card">
-            <img class="card-img-top" src="img/pictures/css.jpg" alt="CSS">
-            <div class="card-body">
-              <h5 class="card-title">CSS</h5>
-              <p class="card-text" id="card-text-id-second">Здесь содержится CSS код, который вы можете скачать</p>
-              <button>
-                <a href="https://drive.google.com/file/d/1moyCdEkqhi3UqwbIPe2ydmdvj_FRm3RD/view?usp=sharing" download>
+            <img class="card-img-top" src="img/pictures/css.jpg" alt="CSS"> <!-- Картинка -->
+            <div class="card-body"> <!-- Тело карточки -->
+              <h5 class="card-title">CSS</h5> <!-- Название карточки -->
+              <p class="card-text" id="card-text-id-second">Здесь содержится CSS код, который вы можете скачать</p> <!-- Текст к ссылке -->
+              <button> <!-- Кнопка -->
+                <a href="https://drive.google.com/file/d/1moyCdEkqhi3UqwbIPe2ydmdvj_FRm3RD/view?usp=sharing" download> <!-- Ссылка -->
                   Скачать
                 </a>
               </button>
@@ -194,14 +202,14 @@
           </div>
         </div>
   
-        <div class="download_list" data-aos="fade-up" data-aos-delay="500">
+        <div class="download_list" data-aos="fade-up" data-aos-delay="500"> <!-- Карточка -->
           <div class="card">
-          <img class="card-img-top" src="img/pictures/javascript.png" alt="JavaScript">
-          <div class="card-body">
-            <h5 class="card-title">JavaScript</h5>
-            <p class="card-text" id="card-text-id-third">Здесь содержится JavaScript, который вы можете скачать</p>
-            <button>
-              <a href="https://drive.google.com/file/d/1m7RKd82zXFNTP_gN4nn3fW3tAyY8MydV/view?usp=sharing" download>
+          <img class="card-img-top" src="img/pictures/javascript.png" alt="JavaScript"> <!-- Картинка -->
+          <div class="card-body"> <!-- Тело карточки -->
+            <h5 class="card-title">JavaScript</h5> <!-- Название карточки -->
+            <p class="card-text" id="card-text-id-third">Здесь содержится JavaScript, который вы можете скачать</p> <!-- Текст к ссылке -->
+            <button> <!-- Кнопка -->
+              <a href="https://drive.google.com/file/d/1m7RKd82zXFNTP_gN4nn3fW3tAyY8MydV/view?usp=sharing" download> <!-- Ссылка -->
                 Скачать
               </a>
             </button>
@@ -211,11 +219,11 @@
     </div>
   </section>
 
-  <footer class="main">
-    <div class="container">
+  <footer class="main"> <!-- Подвал -->
+    <div class="container"> <!-- Контейнер -->
       <div class="main_list">
         <div class="main_contacts">
-          <a class="main_num" href="tel:89885590967">
+          <a class="main_num" href="tel:89885590967"> <!-- Ссылка -->
             Контакты
           </a>
         </div>
@@ -230,5 +238,8 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
