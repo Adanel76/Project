@@ -1,0 +1,49 @@
+@mixin line
+	text-decoration: none
+	color: #d2cfcf  
+	position: relative
+	&:visited
+		color: #d2cfcf
+		transition: 0.3s all ease-in-out
+	&:active
+		color: #a9a8a8
+		transition: 0.3s all ease-in-out
+	&::after
+		display: block
+		content: ''
+		height: 2px
+		background-color: #d2cfcf
+		width: 0%
+		bottom: 0%
+		transition: 0.3s all ease-in-out
+	&::before
+		display: block
+		content: ''
+		height: 2px
+		background-color: #d2cfcf
+		width: 0%
+		bottom: 0%
+		left: 100%
+		position: absolute
+		transition: 0.3s all ease-in-out
+	&:hover
+		color: #b9b9b9
+		transition: 0.3s all ease-in-out
+		&::after
+			transition: 0.3s all ease-in-out
+			width: 50%
+		&::before
+			transition: 0.3s all ease-in-out
+			width: 50%
+			left: 50%
+
+@mixin lineAlt
+	text-decoration: none
+	color: #d2cfcf  
+	position: relative
+	&:visited
+		color: #d2cfcf
+		transition: 0.3s all ease-in-out
+	&:active
+		color: #a9a8a8
+		transition: 0.3s all ease-in-out
